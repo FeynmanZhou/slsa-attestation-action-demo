@@ -83,7 +83,7 @@ You can refer to this sample [slsa.yml](https://github.com/DahuK/slsa-attestatio
 
 After configuring the pipeline, when a commit is merged into the main branch, source-tool will automatically validate the SLSA level and sign the VSA/provenance using DSSE envelop with Cosign.
 
-To meet SLSA Source Level 3 requirements, project administrators must ensure technical controls for branches and all tags. [DESIGN.md](https://github.com/slsa-framework/source-tool/blob/main/docs/DESIGN.md) outlines several controls such as `CONTINUITY_ENFORCED`, `REVIEW_ENFORCED`, `TAG_HYGIENE`, and custom `GH_REQUIRED_CHECK_*` controls that map to organization-defined checks. You can refer to the demo project's [rulesets](https://github.com/DahuK/slsa-attestation-action-demo/settings/rules) as an example.
+To meet SLSA Source Level 3 requirements, project administrators must ensure technical controls for branches and all tags. [DESIGN.md](https://github.com/slsa-framework/source-tool/blob/main/docs/DESIGN.md) outlines several controls such as `CONTINUITY_ENFORCED`, `REVIEW_ENFORCED`, `TAG_HYGIENE`, and custom `GH_REQUIRED_CHECK_*` controls that map to organization-defined checks. 
 
 Submit a commit to trigger the job. After it succeeds, you can view the branch's SLSA Source Level after the commit in the corresponding job run on the Actions page:
 
